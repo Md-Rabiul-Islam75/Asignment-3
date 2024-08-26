@@ -19,6 +19,10 @@
       }
     </style>
 
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- Tailwind cdn -->
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -30,15 +34,91 @@
 
   </head>
 
-  <body class="font-manrope">
+  <body class="font-manrope max-w-screen-xl mx-auto px-10 mb-20">
 
-    <header>
+    <header class="md:container mx-auto">
+
+      <!-- navbar section -->
+
+      <nav>
+  
+        <div class="navbar">
+
+          <!-- first portion of nav -->
+          <div class="flex-1">
+           
+            <a class="btn btn-ghost text-xl"> <i class="fa-solid fa-arrow-right text-md -rotate-45 bg-[#ABEF5F] text-black rounded-full p-1"></i> Rinterio</a>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a class="font-bold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+  
+              </ul>
+            </div>
+          </div>
+
+          <!-- second portion of nav -->
+
+          <div class="navbar-center hidden lg:flex"> 
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="font-bold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- third portion of nav -->
+
+          <div class=" space-x-5">
+
+            
+              <div class="bg-white opacity-75 p-2 rounded-full shadow-2xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+    
+               <div class="bg-white opacity-75 p-2 rounded-full shadow-2xl">
+                <i class="fa-solid fa-cart-shopping"></i>
+               </div>
+        
+            
+             
+            
+           
+            <button class="bg-[#ABEF5F] px-4 py-2 rounded-full text-black font-bold hidden md:flex">Book Consult <i class="fa-solid fa-arrow-right text-md -rotate-45 bg-black text-white rounded-full p-1"></i></button>
+          </div>
+        </div>
+
+      </nav>
+
+     
 
     </header>
 
 
     <main>
-             <h3 class="text-6xl">Hi</h3>
+        
     </main>
 
 
